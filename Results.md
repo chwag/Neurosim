@@ -30,15 +30,20 @@ A more detailed model than the one inspected above is the Morris-Lecar (ML) mode
 \frac{dW}{dt} = \phi\frac{W_{inf}(V)-W}{\tau(V)}
 ```
 
-In this system, action potentials and oscillations can actually be induced with the right parameters. We integrated over the ODEs with different initial values for V and W=0 and plotted the trajectories of the system in its phase plane. From this, we determined, that the system produces an action potential for $`V>=-15`$. We then plotted the Calcium and Potassium currents through the membrane during the action potential for $`V=-15`$. The currents $`I_{Ca}`$ of calcium and potassium are simply the respective elements in the ODE.
+In this system, action potentials and oscillations can actually be induced with the right parameters. We integrated over the ODEs with different initial values for V and W=0 and plotted the trajectories of the system in its phase plane. From this, we determined, that the system produces an action potential for $`V>=-15`$. We then plotted the Calcium and Potassium currents through the membrane during the action potential for $`V=-15`$. The currents of calcium $`I_{Ca}`$ and potassium $`I_K`$ are simply the respective elements in the ODE:
+
+```math
+I_{Ca} = g_{Ca}m_{inf}(V)(V-V_{Ca}) \\
+I_K = g_KW(V-V_K)
+```
 
 ![Action potential inside the ML model](pictures/action_potential.png)
 
-Next, we can investigate the system's ability to oscillate. By adding a fourth current to the entire current, we can simulate a constant current over the membrane, independent of the considered ions. Analyzing an range of values for that constant current yielded the interval ~90 < I < ~210 for that value, where the system oscillates:
+Next, we can investigate the system's ability to oscillate. By adding a fourth constant current $`I_0`$ to the entire current, we can simulate a constant current over the membrane, independent of the considered ions. Analyzing an range of values for $`I_0`$ yielded the interval $`~90<I<~210`$ for that value, where the system oscillates:
 
 ![Oscillations inside the ML model](pictures/oscillations.png)
 
-If some parameters of the system are changed, we can design a model containing a stable cycle as well as a stationary point. In such a model, it is possible to enter the stable cycle and exit it through a sudden impulse, ending in a stationary point. The constant current was set to 110. After about a third of the entire time interval, an impulse of 140 Mikroampere was applied for 1000 time steps. This was enough to terminate the oscillations and enter the drawing-in radius of the stationary point. 
+If some parameters of the system are changed, we can design a model containing a stable cycle as well as a stationary point. In such a model, it is possible to enter the stable cycle and exit it through a sudden impulse, ending in a stationary point. $`I_0`$ was set to 110. After about a third of the entire time interval, an impulse of 140 Mikroampere was applied for 1000 time steps. This was enough to terminate the oscillations and enter the drawing-in radius of the stationary point. 
 
 ![Termination of oscillations through sudden impulse, which ends in a black hole-like steady state](pictures/black_hole.png)
 
