@@ -1,7 +1,7 @@
 # A simulation of the changes in neural membrane potentials
 In this project, we tried to analyze the behaviour of a simulated membrane with changes in the potential over it and in different parameters. Specifically, we wanted to determine the stationary points of different neural membrane systems and evaluate, if and how the systems reach these steady states. In the process of this, we also simulated the induction of an action potential as well as oscillations in our system. 
 
-$\mu$
+$`\mu`$
 
 # A minimalized system of the model by Hodgkin and Huxley
 Fitzhugh derived a model for the change in potential and in fraction of open ion channels in the membrane:
