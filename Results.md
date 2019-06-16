@@ -39,7 +39,7 @@ I_K = g_KW(V-V_K)
 
 ![Action potential inside the ML model](pictures/action_potential.png)
 
-Next, we can investigate the system's ability to oscillate. By adding a fourth constant current $`I_0`$ to the entire current, we can simulate a constant current over the membrane, independent of the considered ions. Analyzing an range of values for $`I_0`$ yielded the interval $`~90<I<~210`$ for that value, where the system oscillates:
+Next, we can investigate the system's ability to oscillate. By adding a fourth constant current $`I_0`$ to the entire current, we can simulate a constant current over the membrane, independent of the considered ions. Analyzing a range of values for $`I_0`$ yielded the interval $`~90<I<~210`$ for that value, where the system oscillates:
 
 ![Oscillations inside the ML model](pictures/oscillations.png)
 
