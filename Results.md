@@ -26,7 +26,7 @@ This model can not produce an action potential and periodic firing, as all traje
 A more detailed model than the one inspected above is the Morris-Lecar (ML) model. 
 
 ```math
-\frac{dV}{dt} = \frac{-g_{Ca}m_{inf}(V)(V-V_{Ca})-g_KW(V-V_K)-g_L(V-V_L)}{C_m} \\
+\frac{dV}{dt} = \frac{-g_{Ca}\,m_{inf}(V)(V-V_{Ca})-g_KW(V-V_K)-g_L(V-V_L)}{C_m} \\
 \frac{dW}{dt} = \phi\frac{W_{inf}(V)-W}{\tau(V)}
 ```
 
