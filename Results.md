@@ -2,12 +2,19 @@
 In this project, we tried to analyze the behaviour of a simulated membrane with changes in the potential over it and in different parameters. Specifically, we wanted to determine the stationary points of different neural membrane systems and evaluate, if and how the systems reach these steady states. In the process of this, we also simulated the induction of an action potential as well as oscillations in our system. 
 
 # A minimalized system of the model by Hodgkin and Huxley
-Fitzhugh derived a model for the change in potential and in fraction of open ion channels in the membrane. By setting the derivations to zero, we can find the nullclines of the ODE in the respective phase plane. 
-We can then additionally integrate over the ODEs to find the trajectories of the system for different starting parameters. In the following image, this was done for $`a=0.25`$ and b=1:
+Fitzhugh derived a model for the change in potential and in fraction of open ion channels in the membrane:
+
+$`\begin{eqnarray}
+\frac{dV}{dt} &=& V(a-V)(V-1)-W \\
+\frac{dW}{dt} &=& b(V-W)
+\end{eqnarray}`$
+
+By setting the derivations to zero, we can find the nullclines of the ODE in the respective phase plane. 
+We can then additionally integrate over the ODEs to find the trajectories of the system for different starting parameters. In the following image, this was done for $`a=0.25`$ and $`b=1`$:
 
 ![Nullclines](pictures/Nullclines.png)
 
-This model can not produce an action potential and periodic firing, as all trajectories are leading to the same steady state in (0,0). There is no stable cycle to oscillate over.
+This model can not produce an action potential and periodic firing, as all trajectories are leading to the same steady state in $`(0,0)`$. There is no stable cycle to oscillate over.
 
 # The Morris-Lecar model as an oscillating system
 A more detailed model than the one inspected above is the Morris-Lecar (ML) model. 
