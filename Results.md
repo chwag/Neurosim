@@ -6,7 +6,7 @@ Fitzhugh derived a model for the change in potential and in fraction of open ion
 
 ```math
 \frac{dV}{dt} = V(a-V)(V-1)-W \\
-\\
+ \\
 \frac{dW}{dt} = b(V-W)
 ```
 
