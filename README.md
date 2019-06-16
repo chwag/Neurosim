@@ -22,7 +22,7 @@ W &=& V
 
 We can then additionally integrate over the ODEs to find the trajectories of the system for different starting parameters. In the following image, this was done for $a=0.25$ and $b=1$:
 
-(Image1)
+![Nullclines](pictures/Nullclines.png)
 
 This model can not produce an action potential and periodic firing, as all trajectories are leading to the same steady state in $(0,0)$. There is no stable cycle to oscillate over.
 
