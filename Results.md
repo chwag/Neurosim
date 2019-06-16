@@ -16,7 +16,7 @@ In this system, action potentials and oscillations can actually be induced with 
 
 ![Action potential inside the ML model](pictures/action_potential.png)
 
-Next, we can investigate the system's ability to oscillate. By adding a fourth current to the entire current, we can simulate a constant current over the membrane, independent of the considered ions. Analyzing an range of values for that constant current yielded the interval ~90<I_0<~210 for that value, where the system oscillates:
+Next, we can investigate the system's ability to oscillate. By adding a fourth current to the entire current, we can simulate a constant current over the membrane, independent of the considered ions. Analyzing an range of values for that constant current yielded the interval ~90 < I < ~210 for that value, where the system oscillates:
 
 ![Oscillations inside the ML model](pictures/oscillations.png)
 
