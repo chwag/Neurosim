@@ -5,11 +5,17 @@ In this project, we tried to analyze the behaviour of a simulated membrane with 
 Fitzhugh derived a model for the change in potential and in fraction of open ion channels in the membrane:
 
 ```math
-\frac{dV}{dt} &=& V(a-V)(V-1)-W \\
-\frac{dW}{dt} &=& b(V-W)
+\frac{dV}{dt} = V(a-V)(V-1)-W \\
+\frac{dW}{dt} = b(V-W)
 ```
 
-By setting the derivations to zero, we can find the nullclines of the ODE in the respective phase plane. 
+By setting the derivations to zero, we can find the nullclines of the ODE in the respective phase plane. Both equations were rewritten to define w in dependency of V:
+
+```math
+W = V(a-V)(V-1) \\
+W = V
+```
+
 We can then additionally integrate over the ODEs to find the trajectories of the system for different starting parameters. In the following image, this was done for $`a=0.25`$ and $`b=1`$:
 
 ![Nullclines](pictures/Nullclines.png)
@@ -19,7 +25,12 @@ This model can not produce an action potential and periodic firing, as all traje
 # The Morris-Lecar model as an oscillating system
 A more detailed model than the one inspected above is the Morris-Lecar (ML) model. 
 
-In this system, action potentials and oscillations can actually be induced with the right parameters. We integrated over the ODEs with different initial values for V and W=0 and plotted the trajectories of the system in its phase plane. From this, we determined, that the system produces an action potential for V>=-15. We then plotted the Calcium and Potassium currents through the membrane during the action potential for V=-15. The currents of calcium and potassium are simply the respective elements in the ODE.
+```math
+\frac{dV}{dt} = \frac{-g_{Ca}m_{inf}(V)(V-V_{Ca})-g_KW(V-V_K)-g_L(V-V_L)}{C_m} \\
+\frac{dW}{dt} = \phi\frac{W_{inf}(V)-W}{\tau(V)}
+```
+
+In this system, action potentials and oscillations can actually be induced with the right parameters. We integrated over the ODEs with different initial values for V and W=0 and plotted the trajectories of the system in its phase plane. From this, we determined, that the system produces an action potential for $`V>=-15`$. We then plotted the Calcium and Potassium currents through the membrane during the action potential for $`V=-15`$. The currents $`I_{Ca}`$ of calcium and potassium are simply the respective elements in the ODE.
 
 ![Action potential inside the ML model](pictures/action_potential.png)
 
