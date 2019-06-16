@@ -8,7 +8,7 @@ Fitzhugh derived a model for the change in potential and in fraction of open ion
 \begin{eqnarray}
 \frac{dV}{dt} &=& V(a-V)(V-1)-W \\
 \frac{dW}{dt} &=& b(V-W)
-\end{eqnarray}`$
+\end{eqnarray}
 ```
 
 By setting the derivations to zero, we can find the nullclines of the ODE in the respective phase plane. 
