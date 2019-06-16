@@ -4,10 +4,12 @@ In this project, we tried to analyze the behaviour of a simulated membrane with 
 # A minimalized system of the model by Hodgkin and Huxley
 Fitzhugh derived a model for the change in potential and in fraction of open ion channels in the membrane:
 
-$`\begin{eqnarray}
+```math
+\begin{eqnarray}
 \frac{dV}{dt} &=& V(a-V)(V-1)-W \\
 \frac{dW}{dt} &=& b(V-W)
 \end{eqnarray}`$
+```
 
 By setting the derivations to zero, we can find the nullclines of the ODE in the respective phase plane. 
 We can then additionally integrate over the ODEs to find the trajectories of the system for different starting parameters. In the following image, this was done for $`a=0.25`$ and $`b=1`$:
