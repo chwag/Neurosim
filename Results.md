@@ -1,8 +1,6 @@
 # A simulation of the changes in neural membrane potentials
 In this project, we tried to analyze the behaviour of a simulated membrane with changes in the potential over it and in different parameters. Specifically, we wanted to determine the stationary points of different neural membrane systems and evaluate, if and how the systems reach these steady states. In the process of this, we also simulated the induction of an action potential as well as oscillations in our system. 
 
-$`\mu`$
-
 # A minimalized system of the model by Hodgkin and Huxley
 Fitzhugh derived a model for the change in potential and in fraction of open ion channels in the membrane:
 
@@ -45,7 +43,7 @@ Next, we can investigate the system's ability to oscillate. By adding a fourth c
 
 ![Oscillations inside the ML model](pictures/oscillations.png)
 
-If some parameters of the system are changed, we can design a model containing a stable cycle as well as a stationary point. In such a model, it is possible to enter the stable cycle and exit it through a sudden impulse, ending in a stationary point. $`I_0`$ was set to 110. After about a third of the entire time interval, an impulse of 140 Mikroampere was applied for 1000 time steps. This was enough to terminate the oscillations and enter the drawing-in radius of the stationary point. 
+If some parameters of the system are changed, we can design a model containing a stable cycle as well as a stationary point. In such a model, it is possible to enter the stable cycle and exit it through a sudden impulse, ending in a stationary point. $`I_0`$ was set to 110. After about a third of the entire time interval, an impulse of 140 $`\muA`$ was applied for 1000 time steps. This was enough to terminate the oscillations and enter the drawing-in radius of the stationary point. 
 
 ![Termination of oscillations through sudden impulse, which ends in a black hole-like steady state](pictures/black_hole.png)
 
