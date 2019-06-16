@@ -2,4 +2,4 @@
 
 Here, you can inspect the calculations made for the simulations:
 
-[shi]
+[Linkstuff](/Neurosim/pictures/photo)
