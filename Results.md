@@ -5,8 +5,7 @@ In this project, we tried to analyze the behaviour of a simulated membrane with 
 Fitzhugh derived a model for the change in potential and in fraction of open ion channels in the membrane:
 
 ```math
-\frac{dV}{dt} &=& V(a-V)(V-1)-W \\
-\frac{dW}{dt} &=& b(V-W)
+int u \frac{dV}{dt} = V(a-V)(V-1)-W
 ```
 
 By setting the derivations to zero, we can find the nullclines of the ODE in the respective phase plane. 
