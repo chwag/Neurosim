@@ -6,10 +6,7 @@ A simulation of the neural membrane after Hodgkin-Huxley and Morris-Lecar
 In this project, we tried to analyze the behaviour of a simulated membrane with changes in the potential over it and in different parameters. Specifically, we wanted to determine the stationary points of different neural membrane systems and evaluate, if and how the systems reach these steady states. In the process of this, we also simulated the induction of an action potential as well as oscillations in our system. 
 
 # A minimalized system of the model by Hodgkin and Huxley
-Fitzhugh derived a model for the change in potential and in fraction of open ion channels in the membrane:
-
-By setting the derivations to zero, we can find the nullclines of the ODE in the respective phase plane. Both equations were rewritten to define w in dependency of V:
-
+Fitzhugh derived a model for the change in potential and in fraction of open ion channels in the membrane. By setting the derivations to zero, we can find the nullclines of the ODE in the respective phase plane. 
 We can then additionally integrate over the ODEs to find the trajectories of the system for different starting parameters. In the following image, this was done for a=0.25 and b=1:
 
 ![Nullclines](pictures/Nullclines.png)
