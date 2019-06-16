@@ -2,7 +2,7 @@
 
 The main results of our experiments can be found in the [Results file](Results.md).
 
-If you are interested in the code, which was written to create the images and results shown in the above file, please inspect the corresponding [jupyter notebook](Final Project.ipynb).
+If you are interested in the code, which was written to create the images and results shown in the above file, please inspect the corresponding [jupyter notebook](Final_Project.ipynb).
 
 Lastly, here you can inspect the calculations made for the simulations:
 
