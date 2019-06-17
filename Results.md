@@ -16,6 +16,8 @@ W = V(a-V)(V-1) \\
 W = V
 ```
 
+We can see that the system has a stationary point at $`(0,0)`$. By calculating the Jacobi-Matrix and evaluating it at the stationary point, we find that the system produces a saddle point for $`b<0`$, a a focus point for $`0.0139<b<4.486`$ and a stable point for $`0<b<0.013`$ and $`b>4.486`$.
+
 We can then additionally integrate over the ODEs to find the trajectories of the system for different starting parameters. In the following image, this was done for $`a=0.25`$ and $`b=1`$:
 
 ![Nullclines](pictures/Nullclines.png)
