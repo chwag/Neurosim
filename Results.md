@@ -9,10 +9,6 @@ Fitzhugh derived a model for the change in potential and in fraction of open ion
 \frac{dW}{dt} = b(V-W)
 ```
 
-```math
-\alpha
-```
-
 By setting the derivations to zero, we can find the nullclines of the ODE in the respective phase plane. Both equations were rewritten to define w in dependency of V:
 
 ```math
